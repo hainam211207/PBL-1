@@ -188,7 +188,7 @@ void xuatfile(node *head, char OutputC[]){
         yP[k]=(double*)malloc((n+1)*sizeof(double));
     }
     for(int j=0; j<=50; j++){
-		double u=(double)j/50;
+		double u=j/50.0;
 		node *temp=head;
 	    for(int i=0; i<=n; i++){
 		    xP[0][i]=temp->x;
@@ -229,7 +229,7 @@ void case4(node *head){
     printf("\t\t=========================================================================================\n");
 	if(head!=NULL){
 		for(int i=0; i<=50; i++){
-			u=(double)i/50;
+			u=i/50.0;
 			deCasteljau(head,u);  
 		}
 		printf("\n\t\t------------------------------------------------------------------------\n");
